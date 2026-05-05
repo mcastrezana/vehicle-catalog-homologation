@@ -1,0 +1,34 @@
+flowchart LR
+A[Catálogo Vehicular Interno] --> B[Prevalidación automática de estructura]
+
+B --> C{¿Cuenta con Clave Aon?}
+C -->|No| C1[Generar Clave Aon automáticamente]
+C -->|Sí| D[Inicio de homologación estandarizada]
+
+C1 --> D
+
+D --> E{¿Existe homologación con la aseguradora?}
+E -->|No| E1[Solicitud automática de AMIS a aseguradora]
+E -->|Sí| F[Validar AMIS]
+
+E1 --> F
+
+F --> G{¿AMIS duplicadas para el modelo año?}
+G -->|Sí| G1[Regla automática\n1 AMIS por Clave Aon + Modelo + Aseguradora]
+G -->|No| H[Homologación confirmada]
+
+G1 --> H
+
+H --> I[Registro centralizado de homologación]
+
+I --> J{¿Aseguradora participa en el negocio?}
+J -->|No| J1[Excluir del flujo de cotización\nsin afectar catálogo]
+J -->|Sí| K[Validación automática de tarifa]
+
+K --> L{¿Existe tarifa vigente?}
+L -->|No| L1[Marcar versión como\nHomologada sin tarifa]
+L -->|Sí| M[Validar reglas de negocio]
+
+M --> N{¿Cumple reglas?}
+N -->|No| N1[Excluir de cotización\npor reglas]
+N -->|Sí| O[Cotización exitosa]
