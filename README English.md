@@ -146,7 +146,7 @@ vehicle-catalog-homologation/
 ├─ mock-data/   # Simulated datasets for demonstration purposes
 ├─ diagrams/    # Process and catalog relationship diagrams (Mermaid)
 └─ validation/  # Validation logic and examples
-
+```
 
 ---
 
