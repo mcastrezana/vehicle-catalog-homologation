@@ -138,14 +138,12 @@ The TO‑BE process proposes improvements focused on:
 
 ## 📁 Repository Structure
 
-
 vehicle-catalog-homologation/
 │
 ├─ docs/        # Conceptual documentation and business rules
 ├─ mock-data/   # Simulated datasets for demonstration purposes
 ├─ diagrams/    # Process and catalog relationship diagrams (Mermaid)
 └─ validation/  # Validation logic and examples
-``
 
 ---
 
