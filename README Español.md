@@ -116,6 +116,16 @@ El proceso TO‑BE propone una mejora orientada a:
   y eficiencia operativa.  
   👉 `diagrams/to-be-overview.mmd`
 
+## 🧠 Comparativo AS‑IS vs TO‑BE
+
+| Aspecto                    | AS‑IS                              | TO‑BE                              |
+|----------------------------|------------------------------------|------------------------------------|
+| Homologación               | Manual y progresiva                | Estandarizada                      |
+| Control de AMIS duplicadas | Revisión manual                    | Regla automática                   |
+| Clave Aon                  | Validación tardía                  | Generación/validación temprana     |
+| Relación catálogo‑tarifa   | Frecuente confusión                | Separación clara                   |
+| Diagnóstico de “no cotiza” | Reactivo                           | Preventivo                         |
+| Trazabilidad               | Parcial                            | Centralizada                       |
 
 ---
 
