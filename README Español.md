@@ -82,6 +82,20 @@ Los cambios propuestos buscan:
 
 ---
 
+# Diagrama AS‑IS del proceso
+
+El repositorio incluye dos representaciones del proceso actual:
+
+- **AS‑IS simplificado**: visión general del flujo de catálogo, homologación,
+  aseguradora y tarifa, orientado a entendimiento rápido.
+- **AS‑IS detallado**: representación del proceso real, con todas las validaciones
+  y puntos de intervención manual que existen en la operación.
+
+La comparación entre ambos permite entender tanto la complejidad real
+como las oportunidades de mejora del proceso.
+
+---
+
 ## 📁 Estructura del Repositorio
 
 
