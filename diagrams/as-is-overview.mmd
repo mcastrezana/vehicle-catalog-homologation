@@ -1,29 +1,29 @@
 flowchart LR
-    A[Catálogo Vehicular Interno] --> B{¿Vehículo existe y está definido?}
+A[Catálogo Vehicular Interno] --> B{¿Vehículo existe y está definido?}
 
-    B -- No --> B1[Solicitar alta o corrección de información]
-    B -- Sí --> C{¿Cuenta con Clave Aon?}
+B -->|No| B1[Solicitar alta o corrección de información]
+B -->|Sí| C{¿Cuenta con Clave Aon?}
 
-    C -- No --> C1[Asignar Clave Aon]
-    C -- Sí --> D[Inicio del proceso de homologación]
+C -->|No| C1[Asignar Clave Aon]
+C -->|Sí| D[Inicio del proceso de homologación]
 
-    D --> E{¿Existe homologación con la aseguradora?}
+D --> E{¿Existe homologación con la aseguradora?}
 
-    E -- No --> E1["Proceso manual pendiente\nSolicitar AMIS a aseguradora"]
-    E -- Sí --> F{¿Existen AMIS duplicadas para el modelo (año)?}
+E -->|No| E1[Proceso manual pendiente\nSolicitar AMIS a aseguradora]
+E -->|Sí| F{¿Existen AMIS duplicadas para el modelo año?}
 
-    F -- Sí --> F1["Aplicar regla:\n1 AMIS por Clave Aon + Modelo + Aseguradora"]
-    F1 --> G[Versión homologada por aseguradora]
+F -->|Sí| F1[Aplicar regla\n1 AMIS por Clave Aon + Modelo + Aseguradora]
+F1 --> G[Versión homologada por aseguradora]
 
-    F -- No --> G[Versión homologada por aseguradora]
+F -->|No| G[Versión homologada por aseguradora]
 
-    G --> H{¿La aseguradora participa en el negocio?}
+G --> H{¿La aseguradora participa en el negocio?}
 
-    H -- No --> H1["Vehículo existe\npero no cotiza para el negocio"]
-    H -- Sí --> I{¿Existe tarifa para la versión?}
+H -->|No| H1[Vehículo existe\npero no cotiza para el negocio]
+H -->|Sí| I{¿Existe tarifa para la versión?}
 
-    I -- No --> I1[Homologado pero sin tarifa]
-    I -- Sí --> J{¿Cumple reglas de negocio?}
+I -->|No| I1[Homologado pero sin tarifa]
+I -->|Sí| J{¿Cumple reglas de negocio?}
 
-    J -- No --> J1["Fuera de reglas\nNo cotiza"]
-    J -- Sí --> K[Cotización exitosa]
+J -->|No| J1[Fuera de reglas\nNo cotiza]
+J -->|Sí| K[Cotización exitosa]
