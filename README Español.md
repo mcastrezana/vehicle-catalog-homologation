@@ -84,15 +84,38 @@ Los cambios propuestos buscan:
 
 # Diagrama AS‑IS del proceso
 
-El repositorio incluye dos representaciones del proceso actual:
 
-- **AS‑IS simplificado**: visión general del flujo de catálogo, homologación,
-  aseguradora y tarifa, orientado a entendimiento rápido.
-- **AS‑IS detallado**: representación del proceso real, con todas las validaciones
-  y puntos de intervención manual que existen en la operación.
+Para facilitar el entendimiento del flujo de homologación y cotización, este repositorio incluye
+diagramas que representan tanto el proceso actual (**AS‑IS**) como el proceso propuesto (**TO‑BE**).
 
-La comparación entre ambos permite entender tanto la complejidad real
-como las oportunidades de mejora del proceso.
+### 📍 AS‑IS – Proceso actual
+El proceso actual de homologación de catálogos y validación de cotización es
+altamente **manual**, con múltiples puntos de decisión y dependencia de información
+por aseguradora y por negocio.
+
+- **AS‑IS simplificado**  
+  Visión general del flujo completo, orientada a entendimiento rápido del proceso.  
+  👉 `diagrams/as-is-overview.mmd`
+
+- **AS‑IS detallado**  
+  Representación del proceso real, incluyendo validaciones, reprocesos y
+  puntos de intervención manual.  
+  👉 `diagrams/as-is-detailed.jpg`
+
+---
+
+### 🚀 TO‑BE – Proceso propuesto
+El proceso TO‑BE propone una mejora orientada a:
+- Validaciones tempranas
+- Reducción de intervención manual
+- Separación clara entre catálogo, homologación y tarifa
+- Mayor trazabilidad por aseguradora y negocio
+
+- **TO‑BE simplificado**  
+  Flujo optimizado que muestra cómo el proceso podría ejecutarse con mayor control
+  y eficiencia operativa.  
+  👉 `diagrams/to-be-overview.mmd`
+
 
 ---
 
